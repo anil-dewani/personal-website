@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{ partial "head/metadata.html" . }}
+    <title>
+        {{ block "title" . }}
+        {{ .Site.Title }}
+        {{ end }}
+    </title>
+    {{ partial "head/head-tags.html" . }}
+</head>
+
+<body class="layout-boxed theme-light">
+
+    <div class="page">
+        {{ partial "header/site-navigation.html" . }}
+        <div class="page-wrapper">
+            <div class="page-body">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+        </div>
+
+        {{ partial "footer/scripts.html" . }}
+        {{ partial "footer/site-footer.html" . }}
+    </div>
+</body>
+
+</html>
