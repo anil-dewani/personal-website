@@ -5,7 +5,11 @@
     <loc>https://solutioncoder.com/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://solutioncoder.com/blog/</loc>
+  </url><url>
     <loc>https://solutioncoder.com/categories/</loc>
+  </url><url>
+    <loc>https://solutioncoder.com/blog/first-post/</loc>
   </url><url>
     <loc>https://solutioncoder.com/tags/</loc>
   </url>
