@@ -1,3 +1,89 @@
 baseURL = 'https://solutioncoder.com/'
 languageCode = 'en-us'
 title = "Solution Coder - Anil's Personal Portfolio"
+
+[Params]
+website_logo = "/solution-coder-logo-2.png"
+coder_photo = "/static/avatars/010m.jpg"
+coder_name = "Anil"
+coder_bio = "This is bio"
+coding_philosophy_link = "/blog/my-coding-philosophy/"
+
+designation = "Computer Engineer"
+lives_at = "Ahemdabad, Gujarat"
+birth_date = "03rd Nov, 1990"
+hobbies = "Photography"
+contact = "support@solutioncoder.com"
+secure_contact = "xmpp@solutioncoder.com"
+pgp_key = "pgp key here"
+soft_skills = "Fluent Communication, Problem Solving & Cognitive Flexibility"
+
+
+github_link = "https://github.com/solution-coder"
+resume_link = "/documents/resume-of-anil.pdf"
+
+homepage_header = "This is header"
+homepage_sub_header = "This is sub header"
+
+homepage_paragraph = "This is paragraph"
+
+arsenal_list = [
+    "Web-Application Development",
+    "Queue & Cache Frameworks",
+    "Database Management",
+    "Web Servers",
+    "DevOps Tools",
+    "Scraping Tools",
+    "Git and C.I",
+    "Load testing",
+    "Security Tools",
+    "SEO Tools",
+    "Advertising Management",
+    "Embedeed Systems",
+    "Operating Systems",
+]
+arsenal_list_message = [
+    "Python, Django, Django Rest Framework & Flask.",
+    "RabbitMQ, Redis, Huey, Memcached & Varnish.",
+    "PostgreSQL, SQLite & MySQL/MariaDB.",
+    "Nginx, Apache, Gunicorn & Uvicorn.",
+    "Supervisor, Vagrant, Prometheus, & OpenVPN.",
+    "Scrapy, Selenium, urllib, python requests & beautifulsoup4.",
+    "Gitlab CI & Buddy.",
+    "Locust.",
+    "HawkEye, PyUP, & MetaSploit.",
+    "SEMRush, Ahrefs, Ubersuggest, Google Keyword Planner & more.",
+    "Facebook Ads, Native Ads, AdRoll, Google Display Network, Google Search Ads, Universal App Campaigns & Push Ads.",
+    "Arduino & Raspberry Pi.",
+    "Debian, Ubuntu, CentOS & Mac OSX",
+]
+
+arsenal_list_images = [
+    "/arsenal/web.png",
+    "/arsenal/process.png",
+    "/arsenal/database.png",
+    "/arsenal/server.png",
+    "/arsenal/devops.png",
+    "/arsenal/crawler.png",
+    "/arsenalgit.png",
+    "/arsenal/load-testing.png",
+    "/arsenal/web-security.png",
+    "/arsenal/seo.png",
+    "/arsenal/ads.png",
+    "/arsenal/arduino.png",
+    "/arsenal/os.png",
+]
+
+open_source_projects_image = [
+    "https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png",
+    "https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png",
+]
+open_source_projects_name = ["Supervisord Manager", "Logs Watcher"]
+open_source_projects_message = [
+    "This is supervisord message",
+    "This is log water message",
+]
+open_source_projects_link = [
+    "https://github.com/solution-coder",
+    "https://github.com/solution-coder",
+]

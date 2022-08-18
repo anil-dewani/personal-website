@@ -4,27 +4,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-            <a href="/">
-                <img src="/static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+            <a href=" /">
+                <img src="{{ .Site.Params.website_logo }}" style="height:2.75rem;" alt="Tabler"
+                    class="navbar-brand-image">
             </a>
         </h1>
         <div class="navbar-nav flex-row order-md-last">
 
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
-                    aria-label="Open user menu">
-                    <span class="avatar avatar-sm" style="background-image: url(/static/avatars/003m.jpg)"></span>
 
-                </a>
-                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <a href="#" class="dropdown-item">Set status</a>
-                    <a href="#" class="dropdown-item">Profile &amp; account</a>
-                    <a href="#" class="dropdown-item">Feedback</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">Settings</a>
-                    <a href="#" class="dropdown-item">Logout</a>
-                </div>
-            </div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
             <div class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
@@ -71,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-report">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact">
                             <span class=" nav-link-icon d-md-none d-lg-inline-block">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/star -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2"
@@ -87,6 +74,28 @@
                             </span>
                             <span class="nav-link-title">
                                 Contact
+                            </span>
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-pgp">
+                            <span class=" nav-link-icon d-md-none d-lg-inline-block">
+                                <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3">
+                                    </path>
+                                    <line x1="8" y1="9" x2="16" y2="9"></line>
+                                    <line x1="8" y1="13" x2="14" y2="13"></line>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                PGP Key
                             </span>
                         </a>
 
