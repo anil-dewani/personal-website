@@ -5,12 +5,20 @@
     <loc>https://solutioncoder.com/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://solutioncoder.com/blog/programming-tools-on-osx/</loc>
+  </url><url>
     <loc>https://solutioncoder.com/blog/</loc>
   </url><url>
     <loc>https://solutioncoder.com/categories/</loc>
   </url><url>
-    <loc>https://solutioncoder.com/blog/first-post/</loc>
+    <loc>https://solutioncoder.com/blog/my-coding-philosophy/</loc>
+  </url><url>
+    <loc>https://solutioncoder.com/photography/</loc>
   </url><url>
     <loc>https://solutioncoder.com/tags/</loc>
+  </url><url>
+    <loc>https://solutioncoder.com/blog/top-tools-to-self-host-on-your-server/</loc>
+  </url><url>
+    <loc>https://solutioncoder.com/blog/ways-to-secure-linux-server/</loc>
   </url>
 </urlset>

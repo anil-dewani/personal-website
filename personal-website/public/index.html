@@ -15,6 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link href="/static/css/small-alerts.css" rel="stylesheet">
+
 <style>
     body {
         --tblr-font-sans-serif: 'Inter';
@@ -32,7 +34,7 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
             <a href=" /">
-                <img src="/solution-coder-logo-2.png" style="height:2.75rem;" alt="Tabler"
+                <img src="/solution-coder-logo.png" style="height:2.75rem;" alt="Tabler"
                     class="navbar-brand-image">
             </a>
         </h1>
@@ -85,6 +87,28 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/photography/">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-aperture"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
+                                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
+                                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
+                                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
+                                    <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Photography
+                            </span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-contact">
                             <span class=" nav-link-icon d-md-none d-lg-inline-block">
                                 
@@ -110,15 +134,14 @@
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-pgp">
                             <span class=" nav-link-icon d-md-none d-lg-inline-block">
                                 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-2"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-key"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M12 20l-3 -3h-2a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-2l-3 3">
-                                    </path>
-                                    <line x1="8" y1="9" x2="16" y2="9"></line>
-                                    <line x1="8" y1="13" x2="14" y2="13"></line>
+                                    <circle cx="8" cy="15" r="4"></circle>
+                                    <line x1="10.85" y1="12.15" x2="19" y2="4"></line>
+                                    <line x1="18" y1="5" x2="20" y2="7"></line>
+                                    <line x1="15" y1="8" x2="17" y2="10"></line>
                                 </svg>
                             </span>
                             <span class="nav-link-title">
@@ -145,10 +168,10 @@
                 <div class="card-body text-center">
                     <div class="mb-3">
                         <span class="avatar avatar-xl avatar-rounded"
-                            style="background-image: url(/static/avatars/010m.jpg)"></span>
+                            style="background-image: url(/coder_photo-2.png)"></span>
                     </div>
                     <div class="card-title mb-1">Anil</div>
-                    <div class="text-muted">This is bio</div>
+                    <div class="text-muted">Backend Developer &amp; DevOps Engineer</div>
                 </div>
 
             </div>
@@ -224,7 +247,7 @@
                             <circle cx="12" cy="12" r="4"></circle>
                             <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
                         </svg>
-                        Contact: <strong>support@solutioncoder.com</strong>
+                        Email: <strong>support@solutioncoder.com</strong>
                     </div>
 
 
@@ -282,7 +305,7 @@
                             Github Profile
                         </a>
                         <br /><br />
-                        <a href="/documents/resume-of-anil.pdf" class="btn btn-info active w-100">
+                        <a href="/documents/resume-of-anil.pdf" class="btn btn-success active w-100">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-download"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -293,6 +316,20 @@
                                 <path d="M18 22v-9"></path>
                             </svg>
                             Download CV
+                        </a>
+
+                        <br /><br />
+                        <a href="/photography/" class="btn btn-info active w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-window-maximize"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="3" y="16" width="5" height="5" rx="1"></rect>
+                                <path d="M4 12v-6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-6"></path>
+                                <path d="M12 8h4v4"></path>
+                                <path d="M16 8l-5 5"></path>
+                            </svg>
+                            Browse Photography
                         </a>
                     </div>
                 </div>
@@ -308,7 +345,7 @@
                         <div class="row align-items-center">
 
                             <div class="col">
-                                <div class="card-title" style="font-size:21px;">👋 Hey there, welcome to my personal
+                                <div class="card-title" style="font-size:19px;">👋 Hey there, welcome to my personal
                                     website!</div>
 
                             </div>
@@ -317,7 +354,7 @@
 
                 </div>
                 <div class="card-body p-0">
-                    <p style="padding:10px;font-size:18px;">I'm Anil, I'm an aspiring tech-enthusiast with a sound grip
+                    <p style="padding:10px;font-size:16px;">I'm Anil, I'm an aspiring tech-enthusiast with a sound grip
                         on very diverse set of toolsets which help me manifest possibilities into technical realities. I
                         can help you code your next web-development project.
                         <br /><br />
@@ -348,6 +385,141 @@
                         Click here to read more about my coding philosophy!
                     </a>
                 </div>
+            </div>
+            <Br />
+            <div class="row">
+
+                <center>
+                    <h3 class="mb-3">Available Services:</h3>
+                </center>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card card-sm">
+                        <div class=" card-body">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <span class="bg-primary text-white avatar">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-webhook" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4.876 13.61a4 4 0 1 0 6.124 3.39h6"></path>
+                                            <path
+                                                d="M15.066 20.502a4 4 0 1 0 1.934 -7.502c-.706 0 -1.424 .179 -2 .5l-3 -5.5">
+                                            </path>
+                                            <path d="M16 8a4 4 0 1 0 -8 0c0 1.506 .77 2.818 2 3.5l-3 5.5"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <div style="font-size:16px;">
+                                        Web Development
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card card-sm">
+                        <div class=" card-body">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <span class="bg-primary text-white avatar">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-chart-arrows-vertical" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M18 21v-14"></path>
+                                            <path d="M9 15l3 -3l3 3"></path>
+                                            <path d="M15 10l3 -3l3 3"></path>
+                                            <line x1="3" y1="21" x2="21" y2="21"></line>
+                                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                                            <path d="M3 6l3 -3l3 3"></path>
+                                            <path d="M6 21v-18"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <div style="font-size:16px;">
+                                        Digital Marketing
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card card-sm">
+                        <div class=" card-body">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <span class="bg-primary text-white avatar">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shield-lock" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3">
+                                            </path>
+                                            <circle cx="12" cy="11" r="1"></circle>
+                                            <line x1="12" y1="12" x2="12" y2="14.5"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <div style="font-size:16px;">
+                                        Web Security
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card card-sm">
+                        <div class=" card-body">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <span class="bg-primary text-white avatar">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-tabler" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M8 9l3 3l-3 3"></path>
+                                            <line x1="13" y1="15" x2="16" y2="15"></line>
+                                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <div style="font-size:16px;">
+                                        Sysadmin Tasks
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
             <br />
             <br />
@@ -622,7 +794,7 @@
                                     <div class="col-auto">
 
                                         <span class="avatar"
-                                            style="background-image: url(/arsenalgit.png);height:3.5rem;width:3.5rem;"></span>
+                                            style="background-image: url(/arsenal/git.png);height:3.5rem;width:3.5rem;"></span>
 
                                     </div>
                                     <div class="col">
@@ -916,14 +1088,14 @@
                             <div class="card">
                                 <div class="row row-0">
                                     <div class="col-3">
-                                        <img src="https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png" class="object-cover"
+                                        <img style="padding-left:12px;padding-top:12px;" src="/square/ssh-icon.jpg" class="object-cover"
                                             alt="Card side image">
                                     </div>
                                     <div class="col">
                                         <div class="card-body">
-                                            <h3 class="card-title">Supervisord Manager</h3>
-                                            <p class="">This is supervisord message</p>
-                                            <a href="https://github.com/solution-coder"><svg
+                                            <h3 class="card-title">SSH Logging System Web UI</h3>
+                                            <p class="">An Web UI tool to manage and log active SSH sessions and captures IP Info of the session</p>
+                                            <a href="https://github.com/solution-coder/ssh-logging-web-ui"><svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     class="icon icon-tabler icon-tabler-external-link" width="24"
                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -948,14 +1120,14 @@
                             <div class="card">
                                 <div class="row row-0">
                                     <div class="col-3">
-                                        <img src="https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png" class="object-cover"
+                                        <img style="padding-left:12px;padding-top:12px;" src="/square/backup-file.png" class="object-cover"
                                             alt="Card side image">
                                     </div>
                                     <div class="col">
                                         <div class="card-body">
-                                            <h3 class="card-title">Logs Watcher</h3>
-                                            <p class="">This is log water message</p>
-                                            <a href="https://github.com/solution-coder"><svg
+                                            <h3 class="card-title">Auto Server Backups!</h3>
+                                            <p class="">An python script to backup essential files, configs, dot files, docker containers and log files automatically to S3 like object storage.</p>
+                                            <a href="https://github.com/solution-coder/unix-server-backup"><svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     class="icon icon-tabler icon-tabler-external-link" width="24"
                                                     height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -985,63 +1157,65 @@
                         <h3 class="mb-3">Recent Blog Posts!</h3>
                     </center>
                     <div class="row row-cards">
+
+                        
+
                         <div class="col-md-6 col-lg-12">
                             <div class="card">
                                 <div class="card-status-top bg-primary"></div>
                                 <div class="card-img-bottom img-responsive img-responsive-21x9"
-                                    style="background-image: url(/static/photos/56614e12b2a7bd68.jpg);padding-top:18%;">
+                                    style="background-image: url(/rectangle/cyber-security.jpg);padding-top:18%;">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Card with top status</h3>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Aperiam deleniti fugit incidunt, iste, itaque minima
-                                        neque pariatur perferendis sed suscipit velit vitae voluptatem.</p>
+                                    <h3 class="card-title">Ways to super secure your linux server</h3>
+                                    <p class="text-muted">Since msot of the code we write is hosted on unix like operating systems - i will share some of the methods i use to secure my linux servers using various tweaks, tools and configurations</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex">
-                                        <a href="#" class="btn btn-primary ms-auto">Read More</a>
+                                        <a href="https://solutioncoder.com/blog/ways-to-secure-linux-server/" class="btn btn-primary ms-auto">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+
                         <div class="col-md-6 col-lg-12">
                             <div class="card">
                                 <div class="card-status-top bg-primary"></div>
                                 <div class="card-img-bottom img-responsive img-responsive-21x9"
-                                    style="background-image: url(/static/photos/56614e12b2a7bd68.jpg);padding-top:18%;">
+                                    style="background-image: url(/rectangle/self-hosted.jpg);padding-top:18%;">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Card with top status</h3>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Aperiam deleniti fugit incidunt, iste, itaque minima
-                                        neque pariatur perferendis sed suscipit velit vitae voluptatem.</p>
+                                    <h3 class="card-title">Tools which i self-host on my server</h3>
+                                    <p class="text-muted">I admire the process of self-hosting open source tools on my own server and being in total control of my own data. This also becomes a learning process as i have to maintain various different types of code-base on my server</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex">
-                                        <a href="#" class="btn btn-primary ms-auto">Read More</a>
+                                        <a href="https://solutioncoder.com/blog/top-tools-to-self-host-on-your-server/" class="btn btn-primary ms-auto">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+
                         <div class="col-md-6 col-lg-12">
                             <div class="card">
                                 <div class="card-status-top bg-primary"></div>
                                 <div class="card-img-bottom img-responsive img-responsive-21x9"
-                                    style="background-image: url(/static/photos/56614e12b2a7bd68.jpg);padding-top:18%;">
+                                    style="background-image: url(/rectangle/philosophy-image.jpg);padding-top:18%;">
                                 </div>
                                 <div class="card-body">
-                                    <h3 class="card-title">Card with top status</h3>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Aperiam deleniti fugit incidunt, iste, itaque minima
-                                        neque pariatur perferendis sed suscipit velit vitae voluptatem.</p>
+                                    <h3 class="card-title">My Code Development Philosophy</h3>
+                                    <p class="text-muted">There is always a right way to code and wrong way to code, after having dwelled into various projects and scenarios - i&rsquo;ve collected various sets of laws/philosophies to abide, for making my code resilient and more aligned towards the industry standards</p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex">
-                                        <a href="#" class="btn btn-primary ms-auto">Read More</a>
+                                        <a href="https://solutioncoder.com/blog/my-coding-philosophy/" class="btn btn-primary ms-auto">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
 
                     </div>
                 </div>
@@ -1057,6 +1231,36 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta11/dist/js/tabler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $(document).ready(function () {
+        console.log("ua");
+        $('#contact-button').click(function () {
+            name = $('#name-field').val()
+            email = $('#email-field').val()
+            message = $("#message-field").val()
+            if (name == '' || email == '' || message == '') {
+                alert("All field are required");
+            }
+            else {
+                var saveData = $.ajax({
+                    type: 'POST',
+                    url: "https://technologyapi.com/api/contact-form/",
+                    data: { "name": name, "email": email, "message": message },
+                    dataType: "application/json",
+                    success: function (resultData) { alert("Save Complete") },
+                    error: function () { alert("wrong"); },
+                });
+            }
+
+
+        })
+    })
+</script>
         <footer class="footer footer-transparent d-print-none">
     <div class="container-xl">
         <div class="row text-center align-items-center flex-row-reverse">
@@ -1073,6 +1277,16 @@
 
                 <Br />
                 <br />
+                <a target="_blank" href="https://github.com/solution-coder/personal-website/"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path>
+                        <line x1="10" y1="14" x2="20" y2="4"></line>
+                        <polyline points="15 4 20 4 20 9"></polyline>
+                    </svg>Source Code of this website!</a>
+                <Br /><br />
 
                 Copyright © 2022
                 <a href="/" class="link-secondary">SolutionCoder.com</a><br />
@@ -1094,27 +1308,58 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>
-                        -----BEGIN PGP PUBLIC KEY BLOCK-----
-                        Comment: Alice's OpenPGP certificate
-                        Comment: https://www.ietf.org/id/draft-bre-openpgp-samples-01.html
+                    <textarea cols="62" rows="18">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: Alice's OpenPGP certificate
+Comment: https://www.ietf.org/id/draft-bre-openpgp-samples-01.html
 
-                        mDMEXEcE6RYJKwYBBAHaRw8BAQdArjWwk3FAqyiFbFBKT4TzXcVBqPTB3gmzlC/U
-                        b7O1u120JkFsaWNlIExvdmVsYWNlIDxhbGljZUBvcGVucGdwLmV4YW1wbGU+iJAE
-                        ExYIADgCGwMFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AWIQTrhbtfozp14V6UTmPy
-                        MVUMT0fjjgUCXaWfOgAKCRDyMVUMT0fjjukrAPoDnHBSogOmsHOsd9qGsiZpgRnO
-                        dypvbm+QtXZqth9rvwD9HcDC0tC+PHAsO7OTh1S1TC9RiJsvawAfCPaQZoed8gK4
-                        OARcRwTpEgorBgEEAZdVAQUBAQdAQv8GIa2rSTzgqbXCpDDYMiKRVitCsy203x3s
-                        E9+eviIDAQgHiHgEGBYIACAWIQTrhbtfozp14V6UTmPyMVUMT0fjjgUCXEcE6QIb
-                        DAAKCRDyMVUMT0fjjlnQAQDFHUs6TIcxrNTtEZFjUFm1M0PJ1Dng/cDW4xN80fsn
-                        0QEA22Kr7VkCjeAEC08VSTeV+QFsmz55/lntWkwYWhmvOgE=
-                        =iIGO
-                        -----END PGP PUBLIC KEY BLOCK-----
-                    </p>
+mDMEXEcE6RYJKwYBBAHaRw8BAQdArjWwk3FAqyiFbFBKT4TzXcVBqPTB3gmzlC/U
+b7O1u120JkFsaWNlIExvdmVsYWNlIDxhbGljZUBvcGVucGdwLmV4YW1wbGU+iJAE
+ExYIADgCGwMFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AWIQTrhbtfozp14V6UTmPy
+MVUMT0fjjgUCXaWfOgAKCRDyMVUMT0fjjukrAPoDnHBSogOmsHOsd9qGsiZpgRnO
+dypvbm+QtXZqth9rvwD9HcDC0tC+PHAsO7OTh1S1TC9RiJsvawAfCPaQZoed8gK4
+OARcRwTpEgorBgEEAZdVAQUBAQdAQv8GIa2rSTzgqbXCpDDYMiKRVitCsy203x3s
+E9+eviIDAQgHiHgEGBYIACAWIQTrhbtfozp14V6UTmPyMVUMT0fjjgUCXEcE6QIb
+DAAKCRDyMVUMT0fjjlnQAQDFHUs6TIcxrNTtEZFjUFm1M0PJ1Dng/cDW4xN80fsn
+0QEA22Kr7VkCjeAEC08VSTeV+QFsmz55/lntWkwYWhmvOgE=
+=iIGO
+-----END PGP PUBLIC KEY BLOCK-----
+                    </textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-success" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-status bg-success"></div>
+                <div class="modal-body text-center py-4">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-green icon-lg" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M9 12l2 2l4 -4"></path>
+                    </svg>
+                    <h3>Payment succedeed</h3>
+                    <div class="text-muted">Your payment of $290 has been successfully submitted. Your invoice has been
+                        sent to support@tabler.io.</div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
+                                    Go to dashboard
+                                </a></div>
+                            <div class="col"><a href="#" class="btn btn-success w-100" data-bs-dismiss="modal">
+                                    View invoice
+                                </a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1124,91 +1369,29 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">New report</h5>
+                    <h5 class="modal-title">Connect with me!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label class="form-label">Name</label>
-                        <input type="text" class="form-control" name="example-text-input"
-                            placeholder="Your report name">
-                    </div>
-                    <label class="form-label">Report type</label>
-                    <div class="form-selectgroup-boxes row mb-3">
-                        <div class="col-lg-6">
-                            <label class="form-selectgroup-item">
-                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input"
-                                    checked="">
-                                <span class="form-selectgroup-label d-flex align-items-center p-3">
-                                    <span class="me-3">
-                                        <span class="form-selectgroup-check"></span>
-                                    </span>
-                                    <span class="form-selectgroup-label-content">
-                                        <span class="form-selectgroup-title strong mb-1">Simple</span>
-                                        <span class="d-block text-muted">Provide only basic data needed for the
-                                            report</span>
-                                    </span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-selectgroup-item">
-                                <input type="radio" name="report-type" value="1" class="form-selectgroup-input">
-                                <span class="form-selectgroup-label d-flex align-items-center p-3">
-                                    <span class="me-3">
-                                        <span class="form-selectgroup-check"></span>
-                                    </span>
-                                    <span class="form-selectgroup-label-content">
-                                        <span class="form-selectgroup-title strong mb-1">Advanced</span>
-                                        <span class="d-block text-muted">Insert charts and additional advanced analyses
-                                            to be inserted in the report</span>
-                                    </span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="mb-3">
-                                <label class="form-label">Report url</label>
-                                <div class="input-group input-group-flat">
-                                    <span class="input-group-text">
-                                        https://tabler.io/reports/
-                                    </span>
-                                    <input type="text" class="form-control ps-0" value="report-01" autocomplete="off">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="mb-3">
-                                <label class="form-label">Visibility</label>
-                                <select class="form-select">
-                                    <option value="1" selected="">Private</option>
-                                    <option value="2">Public</option>
-                                    <option value="3">Hidden</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="mb-3">
-                                <label class="form-label">Client name</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label">Your Name:</label>
+                                <input id="name-field" type="text" class="form-control" placeholder="Enter email">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="mb-3">
-                                <label class="form-label">Reporting period</label>
-                                <input type="date" class="form-control">
+                                <label class="form-label">Your E-mail:</label>
+                                <input id="email-field" type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div>
-                                <label class="form-label">Additional information</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <label class="form-label">Message:</label>
+                                <textarea id="message-field" class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
@@ -1217,7 +1400,7 @@
                     <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
                         Cancel
                     </a>
-                    <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal">
+                    <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal" id="contact-button">
                         
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -1226,7 +1409,7 @@
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
-                        Create new report
+                        Send Message
                     </a>
                 </div>
             </div>

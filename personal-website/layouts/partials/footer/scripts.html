@@ -1,1 +1,31 @@
 <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta11/dist/js/tabler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    $(document).ready(function () {
+        console.log("ua");
+        $('#contact-button').click(function () {
+            name = $('#name-field').val()
+            email = $('#email-field').val()
+            message = $("#message-field").val()
+            if (name == '' || email == '' || message == '') {
+                alert("All field are required");
+            }
+            else {
+                var saveData = $.ajax({
+                    type: 'POST',
+                    url: "https://technologyapi.com/api/contact-form/",
+                    data: { "name": name, "email": email, "message": message },
+                    dataType: "application/json",
+                    success: function (resultData) { alert("Save Complete") },
+                    error: function () { alert("wrong"); },
+                });
+            }
+
+
+        })
+    })
+</script>

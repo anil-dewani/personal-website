@@ -7,12 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://solutioncoder.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>first post</title>
-      <link>https://solutioncoder.com/blog/first-post/</link>
+      <title></title>
+      <link>https://solutioncoder.com/blog/programming-tools-on-osx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://solutioncoder.com/blog/first-post/</guid>
+      <guid>https://solutioncoder.com/blog/programming-tools-on-osx/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>My Code Development Philosophy</title>
+      <link>https://solutioncoder.com/blog/my-coding-philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://solutioncoder.com/blog/my-coding-philosophy/</guid>
+      <description>There is always a right way to code and wrong way to code, after having dwelled into various projects and scenarios - i&amp;rsquo;ve collected various sets of laws/philosophies to abide, for making my code resilient and more aligned towards the industry standards</description>
+    </item>
+    
+    <item>
+      <title>Tools which i self-host on my server</title>
+      <link>https://solutioncoder.com/blog/top-tools-to-self-host-on-your-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://solutioncoder.com/blog/top-tools-to-self-host-on-your-server/</guid>
+      <description>I admire the process of self-hosting open source tools on my own server and being in total control of my own data. This also becomes a learning process as i have to maintain various different types of code-base on my server</description>
+    </item>
+    
+    <item>
+      <title>Ways to super secure your linux server</title>
+      <link>https://solutioncoder.com/blog/ways-to-secure-linux-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://solutioncoder.com/blog/ways-to-secure-linux-server/</guid>
+      <description>Since msot of the code we write is hosted on unix like operating systems - i will share some of the methods i use to secure my linux servers using various tweaks, tools and configurations</description>
     </item>
     
   </channel>

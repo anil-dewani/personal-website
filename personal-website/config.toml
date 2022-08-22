@@ -3,10 +3,10 @@ languageCode = 'en-us'
 title = "Solution Coder - Anil's Personal Portfolio"
 
 [Params]
-website_logo = "/solution-coder-logo-2.png"
-coder_photo = "/static/avatars/010m.jpg"
+website_logo = "/solution-coder-logo.png"
+coder_photo = "/coder_photo-2.png"
 coder_name = "Anil"
-coder_bio = "This is bio"
+coder_bio = "Backend Developer & DevOps Engineer"
 coding_philosophy_link = "/blog/my-coding-philosophy/"
 
 designation = "Computer Engineer"
@@ -65,7 +65,7 @@ arsenal_list_images = [
     "/arsenal/server.png",
     "/arsenal/devops.png",
     "/arsenal/crawler.png",
-    "/arsenalgit.png",
+    "/arsenal/git.png",
     "/arsenal/load-testing.png",
     "/arsenal/web-security.png",
     "/arsenal/seo.png",
@@ -74,16 +74,26 @@ arsenal_list_images = [
     "/arsenal/os.png",
 ]
 
-open_source_projects_image = [
-    "https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png",
-    "https://cdn.myedukit.com/wp-content/uploads/code-1024x862.png",
+open_source_projects_image = ["/square/ssh-icon.jpg", "/square/backup-file.png"]
+
+open_source_projects_name = [
+    "SSH Logging System Web UI",
+    "Auto Server Backups!",
+
 ]
-open_source_projects_name = ["Supervisord Manager", "Logs Watcher"]
 open_source_projects_message = [
-    "This is supervisord message",
-    "This is log water message",
+    "An Web UI tool to manage and log active SSH sessions and captures IP Info of the session",
+    "An python script to backup essential files, configs, dot files, docker containers and log files automatically to S3 like object storage.",
+
 ]
 open_source_projects_link = [
-    "https://github.com/solution-coder",
-    "https://github.com/solution-coder",
+    "https://github.com/solution-coder/ssh-logging-web-ui",
+    "https://github.com/solution-coder/unix-server-backup",
+
 ]
+
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
