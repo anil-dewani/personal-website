@@ -167,23 +167,140 @@
                     <div class="markdown">
                         <h1> Ways to super secure your linux server </h1>
                         <br />
-                        <p>Unix like operating systems are well known amongst the tech eco-system as backbone that holds major part of the developed code hosted on the internet. This has a reason, because the unix like operating systems give complete flexibility of configuration upto the level of kernel and are allow system adminstrators the DIY approach to build the operating system and configure it to their specific necessities.</p>
+                        <div style="line-height: 1.58;margin-bottom: 1rem;margin-top: 1rem;font-size:18px;">
+                            <p>Unix like operating systems are well known amongst the tech eco-system as backbone that holds major part of the developed code hosted on the internet. This has a reason, because the unix like operating systems give complete flexibility of configuration upto the level of kernel and are allow system administrators the DIY approach to build the operating system and configure it to their specific necessities.</p>
 <p>A large eco-system of open-source softwares for such unix OS setup become an extra benefit to keep the costs low.</p>
-<p>However, this comes with a rather bigger responsibility on sysadmin&rsquo;s to secure these unix servers, as it is quite easy to configure such systems in a wrong manner. By default, unix systems are build keeping security in mind and are pretty minimalists, however an ill configured OS can easily expose itself to various attack vectors unknowingly.</p>
-<p>Following are some pro-active measures i take whenever i deploy a new linux server for hosting services for my own needs or for my clients needs.</p>
-<ul>
-<li>Pick a suitable linux distro and stay on the LTS version</li>
-<li>Create a sudo user and disalbe root logins</li>
-<li>Change port of ssh from 22 to any other</li>
-<li>Setup password protected SSH keys and use it for authentication instead of plain-password</li>
-<li>setup ufw fireweall and disallow all traffic except the ports you open for your web services</li>
-<li>setup fail2ban</li>
-<li>setup denyhosts</li>
-<li>minimalist approach, less packages = more security</li>
-<li>update server packages every week or month</li>
-<li>setup logging and alerting</li>
-</ul>
-<p>Done!</p>
+<p>However, this comes with a rather bigger responsibility on sysadmin’s to secure these unix servers, as it is quite easy to configure such systems in a wrong manner. By default, unix systems are build keeping security in mind and are pretty minimalists, however an ill configured OS can easily expose itself to various attack vectors unknowingly.</p>
+<p>Following are some pro-active measures I take whenever I deploy a new linux server for hosting services for my own needs or for my clients needs.</p>
+<h2 id="distro-selection">Distro Selection</h2>
+<p>Linux kernel comes bundled into varieties of distributions which are called “distros” in short. You may have already heard the famous names like ubuntu and Debian, but there are many more which are pre-configured for specific necessities. There are special OS for server hosts, while there are different ones which focus more on the personal workstation for your home and office needs.</p>
+<p>Following are some key points which are vital while choosing the distro to use on your server:</p>
+<blockquote>
+<p>Should have an active development roadmap for future releases</p>
+</blockquote>
+<blockquote>
+<p>Should offer LTS support for their stable versions</p>
+</blockquote>
+<blockquote>
+<p>Ability to enable SELinux and AppArmour</p>
+</blockquote>
+<blockquote>
+<p>Package repositories should be well maintained and updated with new stable packages so you don’t have to compile packages yourself and maintain them.</p>
+</blockquote>
+<blockquote>
+<p>Uses the most stable version of the linux kernel</p>
+</blockquote>
+<blockquote>
+<p>Should provide Enterprise Level Support</p>
+</blockquote>
+<p>There might be more, but the above listed one’s are the most vital.</p>
+<p>I personally prefer Debian as it ticks all the boxes above except there is no enterprise level support. If you as an company want enterprise level support, you only have two options, you can go with red-hat or centOS.</p>
+<h2 id="keeping-your-system-updated">Keeping your system updated</h2>
+<p>Most linux distributions comes pre-bundled with a default package manager which is used to maintain and update all the packages that are installed on the system. You will have to set a weekly or monthly schedules to update all the packages to their latest stable versions. The frequent updates help you fix the following.</p>
+<blockquote>
+<p>Fix new vulnerabilities found in your current packages</p>
+</blockquote>
+<blockquote>
+<p>Fix any bugs that were discovered in the old versions</p>
+</blockquote>
+<blockquote>
+<p>Helps you shift to newer kernel versions once the old version becomes goes unmaintained</p>
+</blockquote>
+<blockquote>
+<p>Refreshes the package manager repositories to keep better track of package versions</p>
+</blockquote>
+<p>It is vital to use proper and stable package repository URL’s as many hosting companies are known to replace it with their own servers. This gives them access to control which packages gets installed on the servers they provide. You can always check them at /etc/apt/sources.list file on your system.</p>
+<p>Sometimes upgrades can fail your services, its important to re-evaluate your important service status after each upgrades.</p>
+<h2 id="operating-using-the-sudo-user">Operating using the sudo user</h2>
+<p>When you setup a new server, you’re probably given access to the root account. This is the account which has super-admin access, and the first attempt should be to protect it at all costs.</p>
+<p>As you will not usually need super-admin access to run all the services you intent to run on your server, you can create a different user and provide it sudo access. This helps you keep the main root user to be used only when its very vital.</p>
+<p>Once you’ve created a new user and added it to the sudoers group - you should immediately disable root logins by editing /etc/ssh/sshd_config file and setting the PermitRootLogin parameter to off.</p>
+<p>This will help your server from getting hacked by brute force attacks trying to break into your root account.</p>
+<h2 id="safeguarding-the-ssh-protocol">Safeguarding the SSH Protocol</h2>
+<p>Any linux system focused on being used on web servers only usually have one open port allowing public connections. That is the infamous port 22. This port allow you to login to your server via the SSH protocol.</p>
+<p>It is vital to change this port to a custom port which only you as an sysadmin would know, because most brute-force attacks are done on public ports which are well-known. Changing it to a custom port will decrease the attack vector to an extent.</p>
+<p>You can set the new port on /etc/ssh/sshd_config file and restart the sshd server.</p>
+<p>However, this doesn’t allow the hackers to discover your new port as they can always do a brute-force attack to discover all the open ports on your server. Hence, we’ve to add an extra level of security. And that is to disable password authentications completely.</p>
+<p>Yes, thats possible. You can login to your servers using SSH-keys, this way you can keep your private key file hosted on your work computer and only a person with that private key and its unique passphrase will be able to access the server. This decreases the attack vector significantly.</p>
+<p>You will have to keep your SSH key’s secure. I usually have them listed on my keychain access utility on my MacBook. This adds an extra layer of security because only a person with the password to your MacBook can view these keys.</p>
+<p><a href="https://linuxize.com/post/how-to-setup-passwordless-ssh-login/">How to Setup Passwordless SSH Login | Linuxize</a></p>
+<p>Bonus points if you setup fail2ban, denyhosts and sshguard on your server. These makes you bulletproof.</p>
+<h2 id="building-a-firewall-around-your-network">Building a firewall around your network</h2>
+<p>Firewall is a network security system you configure on your server to setup rules and policies to safeguard your network. Consider it as a bridge between the public internet and your private intranet network of servers.</p>
+<p>You can accept, drop, reject, redirect the network traffic according to pre-defined rules and policies you set on the firewall system. It helps you keep track of the ports you’ve exposed to the public internet along with their individual access control rulesets.</p>
+<p>Usually linux distributions comes with an pre-installed firewall program called “iptables” but it is quite cumbersome to use and setup. I prefer installing ufw as my firewall as its very user friendly and straight-forward for basic use cases.</p>
+<p>Usual practice I do is to disallow all incoming connections until I deliberately enable it on my firewall. So when I install a new service which operates on a particular port. I’ve to manually enable that port or else by default it will be denied the access.</p>
+<p>sudo ufw default deny incoming</p>
+<p>sudo ufw default allow outgoing</p>
+<p>sudo ufw allow ssh</p>
+<p>sudo ufw allow 80/tcp</p>
+<p>sudo ufw allow 22/tcp</p>
+<h2 id="setup-logging-and-alert-system">Setup logging and alert system</h2>
+<p>Since the server will be running a lot of process and it will be executing the code endlessly, it is vital to keep a track of how each particular service you are hosting on your server is performing. All major packages come pre-packaged with logging facility, they usually create log files In the /var/log folder.</p>
+<p>I usually setup a service called papertrail for all my log management necessities. The tool keeps tracks of all of the lines of log data generated on my server every day, and alerts me on when it detects abnormal patterns.</p>
+<p>I can always debug the issue in depth by intercepting the log files as they are stored on the cloud. This is vital because many a times a server goes dead due to OOM due to DDoS attacks or memory leaks but you can’t login to your own server to intercept the log files. Its vital to keep a logs backup on another system in such use-cases.</p>
+<p>On top of that, I setup m/monit to monitor all the important process I run on my server and I setup Munin to analyse the resource trends on the server.</p>
+<h2 id="setup-snapshot-backups">Setup Snapshot backups</h2>
+<p>No server is secure until you’ve a backup/restore facility configured on it. We’ve to remember all of your digital assets might appear virtual to you on your screens, but they are actually stored as physical bits on a hardware setup at the datacenter somewhere. Datacenter can face natural calamities or your hardware setup might just die due to un-seen circumstances.</p>
+<p>Hence, it is vital to create daily, weekly and monthly snapshots of your server - so you can be at peace all of your work stays safe as you will always have recent and historical snapshots of your system stored somewhere.</p>
+<p>I use my own custom developed python script to perform backup of all the essentials and upload it to the backblaze b2 facility.</p>
+<p>I do daily backups of the following:</p>
+<blockquote>
+<p>The Home Folder which usually contains all of my active project codebases</p>
+</blockquote>
+<blockquote>
+<p>List of all the package installed along with their versions</p>
+</blockquote>
+<blockquote>
+<p>List of all source URLs of the package repositories I use on my server</p>
+</blockquote>
+<blockquote>
+<p>All the GPG keys I’ve stored on my system for secure package management</p>
+</blockquote>
+<blockquote>
+<p>List of all the python packages I’ve installed on my server</p>
+</blockquote>
+<blockquote>
+<p>Backup of /etc/ folder which usually hosts all my config files for software packages I use</p>
+</blockquote>
+<blockquote>
+<p>All the log files</p>
+</blockquote>
+<blockquote>
+<p>All the dot folders that are setup on my root and sudo user so I do not loose configurations</p>
+</blockquote>
+<blockquote>
+<p>Docker containers along with the volumes</p>
+</blockquote>
+<blockquote>
+<p>Full Database backup of Postgres and mariadb instances</p>
+</blockquote>
+<blockquote>
+<p>List of all the running processes and services on my server along with meta-data</p>
+</blockquote>
+<p>The backup data is compressed and uploaded to backblaze b2 or any s3 enabled object storage service every night.</p>
+<p>I usually keep 10 historical snapshots of daily, weekly, and monthly backups each and delete all the redundant ones automatically.</p>
+<p><a href="https://github.com/solution-coder/unix-server-backup">GitHub - solution-coder/unix-server-backup: An python script to do full system backups of unix like systems</a></p>
+
+                        </div>
+
+                        <br />
+
+                        <div id="disqus_thread"></div>
+                        <script>
+
+                            var disqus_config = function () {
+                                this.page.url = "https:\/\/solutioncoder.com\/blog\/ways-to-secure-linux-server\/";
+                                this.page.identifier = "ways-to-super-secure-your-linux-server";
+                            };
+
+                            (function () { 
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://solution-coder.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
 
                     </div>
                 </div>
@@ -198,10 +315,10 @@
                         <div class="card-body text-center">
                             <div class="mb-3">
                                 <span class="avatar avatar-xl avatar-rounded"
-                                    style="background-image: url(/static/avatars/010m.jpg)"></span>
+                                    style="background-image: url(/coder_photo-2.png)"></span>
                             </div>
                             <div class="card-title mb-1"></div>
-                            <div class="text-muted"> </div>
+                            <div class="text"> </div>
                         </div>
 
                     </div>
@@ -317,7 +434,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script id="dsq-count-scr" src="//solution-coder.disqus.com/count.js" async></script>
 
 <script>
     $(document).ready(function () {
@@ -393,20 +510,58 @@
                 <div class="modal-body">
                     <textarea cols="62" rows="18">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-Comment: Alice's OpenPGP certificate
-Comment: https://www.ietf.org/id/draft-bre-openpgp-samples-01.html
 
-mDMEXEcE6RYJKwYBBAHaRw8BAQdArjWwk3FAqyiFbFBKT4TzXcVBqPTB3gmzlC/U
-b7O1u120JkFsaWNlIExvdmVsYWNlIDxhbGljZUBvcGVucGdwLmV4YW1wbGU+iJAE
-ExYIADgCGwMFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AWIQTrhbtfozp14V6UTmPy
-MVUMT0fjjgUCXaWfOgAKCRDyMVUMT0fjjukrAPoDnHBSogOmsHOsd9qGsiZpgRnO
-dypvbm+QtXZqth9rvwD9HcDC0tC+PHAsO7OTh1S1TC9RiJsvawAfCPaQZoed8gK4
-OARcRwTpEgorBgEEAZdVAQUBAQdAQv8GIa2rSTzgqbXCpDDYMiKRVitCsy203x3s
-E9+eviIDAQgHiHgEGBYIACAWIQTrhbtfozp14V6UTmPyMVUMT0fjjgUCXEcE6QIb
-DAAKCRDyMVUMT0fjjlnQAQDFHUs6TIcxrNTtEZFjUFm1M0PJ1Dng/cDW4xN80fsn
-0QEA22Kr7VkCjeAEC08VSTeV+QFsmz55/lntWkwYWhmvOgE=
-=iIGO
+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
+bg==
+=pOfA
 -----END PGP PUBLIC KEY BLOCK-----
+                        
                     </textarea>
                 </div>
 
@@ -457,44 +612,15 @@ DAAKCRDyMVUMT0fjjlnQAQDFHUs6TIcxrNTtEZFjUFm1M0PJ1Dng/cDW4xN80fsn
                 </div>
 
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label class="form-label">Your Name:</label>
-                                <input id="name-field" type="text" class="form-control" placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="mb-3">
-                                <label class="form-label">Your E-mail:</label>
-                                <input id="email-field" type="email" class="form-control" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div>
-                                <label class="form-label">Message:</label>
-                                <textarea id="message-field" class="form-control" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
+                    <br />
+                    <h3>Email: contact@solutioncoder.com</h3>
+                    <br />
+                    <h3>Skype: digitalexistence</h3>
+                    <br />
+                    <h3>Telegram: https://t.me/solutioncoder/</h3>
+                    <br />
                 </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-link link-secondary" data-bs-dismiss="modal">
-                        Cancel
-                    </a>
-                    <a href="#" class="btn btn-primary ms-auto" data-bs-dismiss="modal" id="contact-button">
-                        
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                        </svg>
-                        Send Message
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>

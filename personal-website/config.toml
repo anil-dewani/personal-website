@@ -5,18 +5,18 @@ title = "Solution Coder - Anil's Personal Portfolio"
 [Params]
 website_logo = "/solution-coder-logo.png"
 coder_photo = "/coder_photo-2.png"
-coder_name = "Anil"
-coder_bio = "Backend Developer & DevOps Engineer"
+coder_name = "Anil Dewani"
+coder_bio = "Developer, Tinkerer, Enterprenuer"
 coding_philosophy_link = "/blog/my-coding-philosophy/"
 
 designation = "Computer Engineer"
 lives_at = "Ahemdabad, Gujarat"
 birth_date = "03rd Nov, 1990"
 hobbies = "Photography"
-contact = "support@solutioncoder.com"
+contact = "contact@solutioncoder.com"
 secure_contact = "xmpp@solutioncoder.com"
 pgp_key = "pgp key here"
-soft_skills = "Fluent Communication, Problem Solving & Cognitive Flexibility"
+soft_skills = "Fluent Communication & Cognitive Flexibility"
 
 
 github_link = "https://github.com/solution-coder"
@@ -90,6 +90,63 @@ open_source_projects_link = [
     "https://github.com/solution-coder/ssh-logging-web-ui",
     "https://github.com/solution-coder/unix-server-backup",
 
+]
+
+
+photography_titles = [
+    "The Elephant Ride",
+    "Flower in the fog",
+    "Better Together",
+    "To Be In The Moment",
+    "Flower of the moonlight",
+    "Before flying high",
+    "The Smiley Ball",
+    "Busy in the evening",
+    "Illumination",
+    "Just Chilling",
+    "The Pineapple Express",
+]
+
+photography_sub_titles = [
+    "Coorg, India.",
+    "Ooty, India.",
+    "Rajkot, India.",
+    "Coorg, India.",
+    "Rajkot, India.",
+    "Rajkot, India.",
+    "Home.",
+    "Rajkot, India.",
+    "Ahemdabad, India.",
+    "Coorg, India",
+    "Mumbai, India.",
+]
+
+photography_thumbnails = [
+    "/photography-thumbnails/001.jpg",
+    "/photography-thumbnails/002.jpg",
+    "/photography-thumbnails/011.jpg",
+    "/photography-thumbnails/003.jpg",
+    "/photography-thumbnails/004.jpg",
+    "/photography-thumbnails/005.jpg",
+    "/photography-thumbnails/006.jpg",
+    "/photography-thumbnails/007.jpg",
+    "/photography-thumbnails/009.jpg",
+    "/photography-thumbnails/010.jpg",
+    "/photography-thumbnails/008.jpg",
+]
+
+photography_full_images = [
+    "/photography/001.jpg",
+    "/photography/002.jpg",
+    "/photography/011.jpg",
+    "/photography/003.jpg",
+    "/photography/004.jpg",
+    "/photography/005.jpg",
+    "/photography/006.jpg",
+    "/photography/007.jpg",
+    "/photography/009.jpg",
+    "/photography/010.jpg",
+    "/photography/008.jpg",
 ]
 
 

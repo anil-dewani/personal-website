@@ -8,7 +8,28 @@
                     <div class="markdown">
                         <h1> {{ .Params.title }} </h1>
                         <br />
-                        {{ .Content }}
+                        <div style="line-height: 1.58;margin-bottom: 1rem;margin-top: 1rem;font-size:18px;">
+                            {{ .Content }}
+                        </div>
+
+                        <br />
+
+                        <div id="disqus_thread"></div>
+                        <script>
+
+                            var disqus_config = function () {
+                                this.page.url = "{{ .Permalink }}";
+                                this.page.identifier = "{{ .Params.title | urlize }}";
+                            };
+
+                            (function () { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://solution-coder.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+
                     </div>
                 </div>
             </div>
@@ -22,10 +43,10 @@
                         <div class="card-body text-center">
                             <div class="mb-3">
                                 <span class="avatar avatar-xl avatar-rounded"
-                                    style="background-image: url(/static/avatars/010m.jpg)"></span>
+                                    style="background-image: url({{ .Site.Params.coder_photo }})"></span>
                             </div>
-                            <div class="card-title mb-1">{{ .Params.coder_name}}</div>
-                            <div class="text-muted">{{ .Params.coder_bio }} </div>
+                            <div class="card-title mb-1">{{ .Params.coder_name }}</div>
+                            <div class="text">{{ .Params.coder_bio }} </div>
                         </div>
 
                     </div>
