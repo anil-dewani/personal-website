@@ -22,3 +22,4 @@ Outlines
 - 12factors
 - using cookiecutters
 - Using docstrings
+- Debugging workflows for C.I Locally
