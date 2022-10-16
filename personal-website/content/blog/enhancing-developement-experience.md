@@ -21,3 +21,4 @@ Outlines
 - django-version-checks, run tests
 - 12factors
 - using cookiecutters
+- Using docstrings
