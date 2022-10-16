@@ -11,7 +11,18 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Publish
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.104.3'
+          extended: true
+
+      - name: Build
+        working-directory: ./personal-website
+        run: hugo --minify
+      
+      - name: Publish to cloudflare
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
