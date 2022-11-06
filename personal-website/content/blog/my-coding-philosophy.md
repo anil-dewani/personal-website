@@ -4,7 +4,7 @@ summary: "There is always a right way to code and wrong way to code, after havin
 cover_photo: "/rectangle/philosophy-image.jpg"
 ---
 
-I would like to share my journey and some gems I picked up traversing through this creative jungle field we called: Information technology.
+I would like to share my journey and some gems I picked up traversing through this creative jungle field we called: Information technology...
 
 Coding is a very structured form of creation, it’s not as abstract as painting where you can let your mind take its course the way it intuitively feels like. Coding can be artistic too as it involves the element of subjective choices, but inherently it remains a creative process. It’s about building stuff, manifesting it into existence using your learned skill-sets and keeping it resilient, clean and functional. 
 
