@@ -4,7 +4,7 @@ summary: "I admire the process of self-hosting open source tools on my own serve
 cover_photo: "/rectangle/self-hosted.jpg"
 ---
 
-As it might be experience of everybody of us, human existence feels quite limited without our tools. Humans are called intelligent beings because we invent tools and tools in-turn build us further. It’s a cyclic thing. 
+As it might be experience of everybody of us, human existence feels quite limited without our tools. Humans are called intelligent beings because we invent tools and tools in-turn build us further. It’s a cyclic thing. ...
 
 In this modern world, we are almost bound to experience parts of our lives by using various tools. We use tools to cook, tools to organise our life, tools to earn a living by working. Tools are everywhere around us. Moving further into this evolutionary cycles, the future A.I tools shall probably build more tools for themselves automatically and finally this need of humans inventing new tools and managing them can be left out of the equation. However, this is just a probabilistic speculation at this point - just a random flight of my mind.
 
