@@ -1,7 +1,7 @@
 account_id = "c62a30c6a27e44f71d9e6a33788f9c76"
 name = "personal-website"
 workers_dev = false
-route = "solutioncoder.com/*"
+route = "anildewani.com/*"
 
 main = "cloudflare-worker/index.js"
 compatibility_date = "2022-08-22"
