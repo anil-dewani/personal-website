@@ -1,6 +1,6 @@
-baseURL = 'https://solutioncoder.com/'
+baseURL = 'https://anildewani.com/'
 languageCode = 'en-us'
-title = "Solution Coder - Anil's Personal Portfolio"
+title = "Anil Dewani - Developer, Tinkerer, Enterprenuer"
 
 [Params]
 website_logo = "/solution-coder-logo.png"
@@ -13,13 +13,13 @@ designation = "Computer Engineer"
 lives_at = "Ahemdabad, Gujarat"
 birth_date = "03rd Nov, 1990"
 hobbies = "Photography"
-contact = "contact@solutioncoder.com"
-secure_contact = "xmpp@solutioncoder.com"
+contact = "contact@anildewani.com"
+secure_contact = "xmpp@anildewani.com"
 pgp_key = "pgp key here"
 soft_skills = "Fluent Communication & Cognitive Flexibility"
 
 
-github_link = "https://github.com/solution-coder"
+github_link = "https://github.com/anil-dewani"
 resume_link = "/documents/resume-of-anil.pdf"
 
 homepage_header = "This is header"
@@ -87,8 +87,8 @@ open_source_projects_message = [
 
 ]
 open_source_projects_link = [
-    "https://github.com/solution-coder/ssh-logging-web-ui",
-    "https://github.com/solution-coder/unix-server-backup",
+    "https://github.com/anil-dewani/ssh-logging-web-ui",
+    "https://github.com/anil-dewani/unix-server-backup",
 
 ]
 

@@ -90,8 +90,11 @@
                 <center>
                     <h3 class="mb-3">Recent Blog Posts!</h3>
                 </center>
+                {{ $currentpageurl := .Permalink}}
                 {{ range (first 3 (first 4 ( where .Site.Pages "Type" "blog" ).ByDate.Reverse ) ) }}
+                {{ if eq .Permalink $currentpageurl }}
 
+                {{ else }}
                 <div class="col-md-6 col-lg-12">
                     <div class="card">
                         <div class="card-status-top bg-primary"></div>
@@ -109,6 +112,8 @@
                         </div>
                     </div>
                 </div>
+                {{ end }}
+
                 {{ end }}
 
             </div>
