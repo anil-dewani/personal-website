@@ -77,18 +77,26 @@ arsenal_list_images = [
 open_source_projects_image = ["/square/ssh-icon.jpg", "/square/backup-file.png"]
 
 open_source_projects_name = [
-    "SSH Logging System Web UI",
-    "Auto Server Backups!",
-
+    "Firefly Import Helpers",
+    "Unix Server Backup",
+    "SSH Monitoring Web UI",
+    "Idea Management Mobile App",
+    "JAMStack based personal website"
 ]
 open_source_projects_message = [
-    "An Web UI tool to manage and log active SSH sessions and captures IP Info of the session",
-    "An python script to backup essential files, configs, dot files, docker containers and log files automatically to S3 like object storage.",
+    "An extended transactions importer for the Firefly III Personal Finance manager software. Dedicated modules for top banks of india, to import bank account and credit card transactions.",
+    "An python script focused on doing a detailed daily snapchat of linux servers and automatically uploading them to s3 enabled storage servers.",
+    "Django based web UI application which lists down all the attempts made to login to your server via SSH. Useful to do security audits and blocking out crawler bots doing bruteforce attacks on the server.",
+    "An Flutter based mobile application which helps to quick add new ideas flowing through the mind, and manage execution of each by shortlisting them into various categories of operation.",
+    "Personal website coded using the JAMStack Approach using hugo framework, deployed using cloudflare workers on their worldwide CDN for lowest latency and fastest cache.",
 
 ]
 open_source_projects_link = [
-    "https://github.com/anil-dewani/ssh-logging-web-ui",
+    "https://github.com/anil-dewani/firefly-import-helper",
     "https://github.com/anil-dewani/unix-server-backup",
+    "https://github.com/anil-dewani/ssh-logging-web-ui",
+    "https://github.com/anil-dewani/Ideas-Management",
+    "https://github.com/anil-dewani/personal-website",
 
 ]
 
