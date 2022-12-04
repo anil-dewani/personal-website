@@ -3,11 +3,9 @@
 
 <head>
     {{ partial "head/metadata.html" . }}
-    <title>
-        {{ block "title" . }}
-        {{ .Site.Title }}
-        {{ end }}
+    <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}
     </title>
+
     {{ partial "head/head-tags.html" . }}
 </head>
 

@@ -1,6 +1,6 @@
 baseURL = 'https://anildewani.com/'
 languageCode = 'en-us'
-title = "Anil Dewani - Developer, Tinkerer, Enterprenuer"
+title = "Anil Dewani"
 
 [Params]
 website_logo = "/solution-coder-logo.png"
@@ -21,6 +21,10 @@ soft_skills = "Fluent Communication & Cognitive Flexibility"
 
 github_link = "https://github.com/anil-dewani"
 resume_link = "/documents/resume-of-anil.pdf"
+email_link = "mail:contact@anildewani.com"
+linkedin_link = "https://www.linkedin.com/in/anil-d-15729a1b9/"
+telegram_link = "https://t.me/timefractals"
+instagram_link = "https://www.instagram.com/madbytes/"
 
 homepage_header = "This is header"
 homepage_sub_header = "This is sub header"
