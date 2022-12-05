@@ -2,6 +2,7 @@
 title: "Enhancing Development Experience"
 summary: "Coming soon..."
 cover_photo: "/rectangle/philosophy-image.jpg"
+read_time: "10 min"
 ---
 
 Coming soon, a post describing how i enhanced my developer experience (DX) for web development.

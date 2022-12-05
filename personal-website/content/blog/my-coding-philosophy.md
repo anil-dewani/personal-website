@@ -2,6 +2,7 @@
 title: "My Code Development Philosophy"
 summary: "There is always a right way to code and wrong way to code, after having dwelled into various projects and scenarios - i've collected various sets of laws/philosophies to abide, for making my code resilient and more aligned towards the industry standards"
 cover_photo: "/rectangle/philosophy-image.jpg"
+read_time: "10 min"
 ---
 
 I would like to share my journey and some gems I picked up traversing through this creative jungle field we called: Information technology...
