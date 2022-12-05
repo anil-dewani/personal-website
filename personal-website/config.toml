@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = "Anil Dewani"
 
 [Params]
-website_logo = "/solution-coder-logo.png"
+website_logo = "/anil-dewani-logo.png"
 coder_photo = "/coder_photo-2.png"
 coder_name = "Anil Dewani"
 coder_bio = "Developer, Tinkerer, Enterprenuer"
