@@ -7,7 +7,9 @@
                 <div class="card-body">
                     <div class="markdown">
                         <h1> {{ .Params.title }} </h1>
-                        <h4> Read Time: {{.Params.read_time }} </h4>
+                        <p style="padding-top:5px;font-size:12px;">
+                            {{ .Params.read_time }} read
+                        </p>
                         <br />
                         <div style="line-height: 1.58;margin-bottom: 1rem;margin-top: 1rem;font-size:18px;">
                             {{ .Content }}
@@ -108,6 +110,9 @@
                         </div>
                         <div class="card-footer">
                             <div class="d-flex">
+                                <p style="padding-top:5px;font-size:11px;">
+                                    {{ .Params.read_time }} read
+                                </p>
                                 <a href="{{ .Permalink }}" class="btn btn-primary ms-auto">Read More</a>
                             </div>
                         </div>

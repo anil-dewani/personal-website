@@ -20,7 +20,8 @@
                     <center>
 
 
-                        <a href="{{ .Site.Params.email_link }}" class="btn" target="_blank">&nbsp;&nbsp;&nbsp;
+                        <a href="{{ .Site.Params.email_link }}" aria-label="Connect using email" class="btn"
+                            target="_blank">&nbsp;&nbsp;&nbsp;
                             <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="24"
                                 height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -32,7 +33,8 @@
 
                         </a>
 
-                        <a href="{{ .Site.Params.linkedin_link }}" class="btn" target="_blank">&nbsp;&nbsp;&nbsp;
+                        <a href="{{ .Site.Params.linkedin_link }}" aria-label="Connect using linkedin" class="btn"
+                            target="_blank">&nbsp;&nbsp;&nbsp;
                             <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -48,7 +50,8 @@
                         </a>
 
 
-                        <a href="{{ .Site.Params.telegram_link }}" class="btn" target="_blank">&nbsp;&nbsp;&nbsp;
+                        <a href="{{ .Site.Params.telegram_link }}" aria-label="Connect using telegram" class="btn"
+                            target="_blank">&nbsp;&nbsp;&nbsp;
                             <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -87,7 +90,7 @@
             <div class="card">
 
                 <div class="card-body">
-                    <h3 class="card-title">My Code Development Philosophy</h3>
+                    <p style="font-weight: bold; font-size: 20px;" class="card-title">My Code Development Philosophy</p>
                     <p>Since programming code is an very structured form of creation, there are verstatile ways of
                         creating code, there is a very huge scope of subjective choices to be made when building I.T
                         infrastructures and keeping them reliable and resilient to their functionalities. Click on link
@@ -158,13 +161,15 @@
             <Br />
             <br />
             <center>
-                <h3 class="mb-3">Recent Blog Posts:</h3>
+                <p style="font-weight: bold; font-size: 16px;" class="mb-3">Recent Blog Posts:</p>
             </center>
             <div class="row row-cards">
 
 
 
-                {{ range (first 3 (first 4 ( where .Site.Pages "Type" "blog" ).ByDate.Reverse ) ) }}
+                {{ range (first 4 (first 4 ( where .Site.Pages "Type" "blog" ).ByDate.Reverse ) ) }}
+                {{ if eq .Title "My Code Development Philosophy"}}
+                {{ else }}
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-status-top bg-primary"></div>
@@ -175,12 +180,18 @@
                             <p class="text-muted">{{ .Summary }}</p>
                         </div>
                         <div class="card-footer">
+
                             <div class="d-flex">
+                                <p style="padding-top:5px;font-size:12px;">
+                                    {{ .Params.read_time }} read
+                                </p>
                                 <a href="{{.Permalink}}" class="btn btn-github ms-auto">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{ end }}
+
                 {{ end }}
 
 
