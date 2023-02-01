@@ -1,6 +1,6 @@
 ---
-title: "Tools which i self-host on my server"
-summary: "I admire the process of self-hosting open source tools on my own server and being in total control of my own data. This also becomes a learning process as i have to maintain various different types of code-base on my server"
+title: "Tools which I self-host on my server"
+summary: "I admire the process of self-hosting open source tools on my own server and being in total control of my own data. This also becomes a learning process as I have to maintain various different types of code-base on my server"
 cover_photo: "/rectangle/self-hosted.jpg"
 read_time: "12 min"
 ---

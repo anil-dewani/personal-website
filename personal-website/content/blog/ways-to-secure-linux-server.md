@@ -1,6 +1,6 @@
 ---
 title: "Ways to super secure your linux server"
-summary: "Since msot of the code we write is hosted on unix like operating systems - i will share some of the methods i use to secure my linux servers using various tweaks, tools and configurations"
+summary: "Since msot of the code we write is hosted on unix like operating systems - I will share some of the methods I use to secure my linux servers using various tweaks, tools and configurations"
 cover_photo: "/rectangle/cyber-security.jpg"
 read_time: "5 min"
 ---
