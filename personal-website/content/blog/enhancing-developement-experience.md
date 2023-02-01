@@ -1,13 +1,11 @@
 ---
 title: "Enhancing Development Experience"
-summary: "Coming soon..."
+summary: "Development experience is as important as user experience - a resilient development setup offers a great structure to the complexities of the whole development process. In this article i present my setup for django web development"
 cover_photo: "/rectangle/philosophy-image.jpg"
-read_time: "10 min"
+read_time: "2 min"
 ---
 
-Coming soon, a post describing how i enhanced my developer experience (DX) for web development.
-
-Outlines 
+I enhanced my developer experience (DX) for web development by using following toolkits, frameworks, workflows and more.
 
 - Pre commit hooks
 - CI (share some github actions)
@@ -24,3 +22,5 @@ Outlines
 - using cookiecutters
 - Using docstrings
 - Debugging workflows for C.I Locally
+
+I will be describing each of them in detail during my next update. Stay tuned.

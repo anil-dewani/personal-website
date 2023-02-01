@@ -2,7 +2,7 @@
 title: "Ways to super secure your linux server"
 summary: "Since msot of the code we write is hosted on unix like operating systems - i will share some of the methods i use to secure my linux servers using various tweaks, tools and configurations"
 cover_photo: "/rectangle/cyber-security.jpg"
-read_time: "10 min"
+read_time: "5 min"
 ---
 
 Unix like operating systems are well known amongst the tech eco-system as backbone that holds major part of the developed code hosted on the internet. This has a reason, because the unix like operating systems give complete flexibility of configuration upto the level of kernel and are allow system administrators the DIY approach to build the operating system and configure it to their specific necessities.

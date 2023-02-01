@@ -2,7 +2,7 @@
 title: "Tools which i self-host on my server"
 summary: "I admire the process of self-hosting open source tools on my own server and being in total control of my own data. This also becomes a learning process as i have to maintain various different types of code-base on my server"
 cover_photo: "/rectangle/self-hosted.jpg"
-read_time: "10 min"
+read_time: "12 min"
 ---
 
 As it might be experience of everybody of us, human existence feels quite limited without our tools. Humans are called intelligent beings because we invent tools and tools in-turn build us further. It’s a cyclic thing. ...
