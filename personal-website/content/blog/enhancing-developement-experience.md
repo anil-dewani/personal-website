@@ -3,6 +3,7 @@ title: "Enhancing Development Experience"
 summary: "Development experience is as important as user experience - a resilient development setup offers a great structure to the complexities of the whole development process. In this article I present my setup for django web development"
 cover_photo: "/rectangle/philosophy-image.jpg"
 read_time: "2 min"
+draft: true
 ---
 
 I enhanced my developer experience (DX) for web development by using following toolkits, frameworks, workflows and more.
