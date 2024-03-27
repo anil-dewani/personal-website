@@ -192,7 +192,7 @@
 
 
 
-        {{ range (first 2 (first 2 ( where .Site.Pages "Type" "blog" ).ByDate.Reverse ) ) }}
+        {{ range (first 3 (first 3 (where .Site.Pages "Type" "blog" ).ByDate.Reverse ) ) }}
         <div class="col-lg-4">
           <div class="card">
             <div class="card-status-top bg-primary"></div>

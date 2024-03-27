@@ -86,22 +86,32 @@ open_source_projects_image = ["/square/ssh-icon.jpg", "/square/backup-file.png"]
 open_source_projects_name = [
   "Firefly Import Helpers",
   "Unix Server Backup",
-  "SSH Monitoring Web UI",
   "JAMStack based personal website",
+  "SMS Transaction Parser",
+  "dotfiles",
+  "Jira Dashboard",
+  "OSX Locker",
+  "Ideas Manager",
 ]
 open_source_projects_message = [
   "An extended transactions importer for the Firefly III Personal Finance manager software. Dedicated modules for top banks of india, to import bank account and credit card transactions.",
   "An python script focused on doing a detailed daily snapchat of linux servers and automatically uploading them to s3 enabled storage servers.",
-  "Django based web UI application which lists down all the attempts made to login to your server via SSH. Useful to do security audits and blocking out crawler bots doing bruteforce attacks on the server.",
   "Personal website coded using the JAMStack Approach using hugo framework, deployed using cloudflare workers on their worldwide CDN for lowest latency and fastest cache.",
-
+  "FastAPI powered API codebase which accepts SMS messages as an input, auto-detects if a particular message is transactional in nature or not, and then parses out all the transactional meta-data and forwards it to Finance Management Systems.",
+  "A central hub for all of my configuration files which i've tweaked to enhance my DX (Developer Experience). Comes with an install.sh script which can be used to initialise all of new systems or existing systems to adhere to the configurations automatically.",
+  "A bird-eye view dashboard which connects via API to your JIRA account and parses tickets assigned to you to guage your upcoming work-load to better plan your commitments.",
+  "This utility changes password of your current osx user to a random password and notifies you of the new password automatically on the next working day. You will not have access to the newly set password until next working day arrives. It locks you out of your own system to enhance your work-life balance commitments.",
+  "Flutter based mobile application to quickly add new ideas to a cloud database and shift ideas into meaningful modes of operations to better manage them.",
 ]
 open_source_projects_link = [
   "https://github.com/anil-dewani/firefly-import-helper",
   "https://github.com/anil-dewani/unix-server-backup",
-  "https://github.com/anil-dewani/ssh-logging-web-ui",
   "https://github.com/anil-dewani/personal-website",
-
+  "https://github.com/anil-dewani/sms-transaction-parser",
+  "https://github.com/anil-dewani/dotfiles",
+  "https://github.com/anil-dewani/jira-dashboard",
+  "https://github.com/anil-dewani/osx-locker",
+  "https://github.com/anil-dewani/Ideas-Management",
 ]
 
 
