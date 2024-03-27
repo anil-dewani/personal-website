@@ -1,33 +1,34 @@
 {{ define "main" }}
 
 <div class="container-xl">
-    <div class="row row-cards">
+  <div class="row row-cards">
 
 
 
-        {{ range (after 1 ( where .Site.Pages "Type" "blog" ).ByDate).Reverse }}
-        <div class="col-lg-4">
-            <div class="card">
-                <div class="card-status-top bg-primary"></div>
-                <div class="card-img-bottom img-responsive img-responsive-21x9"
-                    style="background-image: url({{ .Params.cover_photo }});padding-top:18%;"></div>
-                <div class="card-body">
-                    <h3 class="card-title">{{.Title}}</h3>
-                    <p class="text-muted">{{ .Summary }}</p>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex">
-                        <a href="{{.Permalink}}" class="btn btn-primary ms-auto">Read More</a>
-                    </div>
-                </div>
-            </div>
+    {{ range (after 1 ( where .Site.Pages "Type" "blog" ).ByDate).Reverse }}
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-status-top bg-primary"></div>
+        <div class="card-img-bottom img-responsive img-responsive-21x9"
+          style="background-image: url({{ .Params.cover_photo }});padding-top:18%;"></div>
+        <div class="card-body">
+          <a class="card-title" href="{{ .Permalink }}"> {{ .Title }}</a>
+          <p class="text-muted">{{ .Summary }}</p>
         </div>
-        {{ end }}
+        <div class="card-footer">
+          <div class="d-flex">
 
-
-
-
+            {{ .Params.read_time }} read
+          </div>
+        </div>
+      </div>
     </div>
+    {{ end }}
+
+
+
+
+  </div>
 </div>
 
 {{end}}
