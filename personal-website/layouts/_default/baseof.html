@@ -2,153 +2,153 @@
 <html lang="en">
 
 <head>
-    {{ partial "head/metadata.html" . }}
-    <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}
-    </title>
+  {{ partial "head/metadata.html" . }}
+  <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}
+  </title>
 
-    {{ partial "head/head-tags.html" . }}
+  {{ partial "head/head-tags.html" . }}
 </head>
 
 <body class="layout-boxed theme-light">
 
-    <div class="page">
-        {{ partial "header/site-navigation.html" . }}
-        <div class="page-wrapper">
-            <div class="page-body">
-                {{ block "main" . }}
-                {{ end }}
-            </div>
-        </div>
-
-        {{ partial "footer/scripts.html" . }}
-        {{ partial "footer/site-footer.html" . }}
+  <div class="page">
+    {{ partial "header/site-navigation.html" . }}
+    <div class="page-wrapper">
+      <div class="page-body">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
     </div>
 
+    {{ partial "footer/scripts.html" . }}
+    {{ partial "footer/site-footer.html" . }}
+  </div>
 
-    <div class="modal modal-blur fade" id="modal-pgp" tabindex="-1" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Public PGP Key to encrypt messages!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <textarea cols="62" rows="18">
------BEGIN PGP PUBLIC KEY BLOCK-----
 
-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
-bg==
-=pOfA
------END PGP PUBLIC KEY BLOCK-----
-                        
-                    </textarea>
-                </div>
-
-            </div>
+  <div class="modal modal-blur fade" id="modal-pgp" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Public PGP Key to encrypt messages!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
+        <div class="modal-body">
+          <textarea cols="62" rows="18">
+            -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-    <div class="modal modal-blur fade" id="modal-success" tabindex="-1" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-status bg-success"></div>
-                <div class="modal-body text-center py-4">
-                    <!-- Download SVG icon from http://tabler-icons.io/i/circle-check -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-green icon-lg" width="24" height="24"
-                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <path d="M9 12l2 2l4 -4"></path>
-                    </svg>
-                    <h3>Payment succedeed</h3>
-                    <div class="text-muted">Your payment of $290 has been successfully submitted. Your invoice has been
-                        sent to support@tabler.io.</div>
-                </div>
-                <div class="modal-footer">
-                    <div class="w-100">
-                        <div class="row">
-                            <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
-                                    Go to dashboard
-                                </a></div>
-                            <div class="col"><a href="#" class="btn btn-success w-100" data-bs-dismiss="modal">
-                                    View invoice
-                                </a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            mQINBGMW5lYBEADq5PAewoGRjYIxOwIjoDN/clusQWbWPKxAC/BGHUJ12Zh34V8c
+            bFTB2MSQgWmuTjVepF0KGbK3tj+nWmlf3QsXjh9ink6vHEj+3Dd3pTlrVMPkqPo9
+            DZiTWqxxZcXaQsxa8tl7+/flQlKJCgUf+MD20dR6f4ZFIz3ma0lR9hhdCznj+anZ
+            uvi67mNf3OpEQ+woW6r34yZ/51fZdjRsgyYuHpx64jiZfYSm2/WKOxEXvGGnJR3B
+            9R3LgsHganVzZ/2ftBm+vBIpjbna+OJj3MBu3FCaW/BXAeg8QQfyn92R/Bpksbtv
+            RPXKKf9VVyo//b4mKrv59FRZdQQz4LitjQQB5m9hL41DHMcHSCO6zgFY3Lp4OpUF
+            +0BBBIeEfPZ0+YBjR6l52AYaus/ooA1CoCgiklnPiGHg7LsOH5AGQiCv4ckfjAry
+            noEGlxyH1qlIXZg9i8MePBTUYtkpDrewsdkY3wqXSM9MmoWfdXtgf0EYQGmIgBUu
+            dn5GnlhrxxSQUqTjY56Hx8V7yVTQLeyF4w8c4PGqgSAmX0ET4XKuCW2KuBKIqseD
+            0hK82nX0Ij4inznqGO39gyZsX8ssXQZi3Mrwu9B/mz2Vu4jClCsPuXf6x6WA1z03
+            coimws1eGEkR68HB6AKuLaONDjBSDsmPsgoGHdtrieo6Pi14J2OgLg4KqwARAQAB
+            tBlBbmlsIDxtZUB0aW1lZnJhY3RhbC5jb20+iQJUBBMBCAA+FiEEUXthUtuwBFtI
+            whwwRkkGen6kkYEFAmMW5lYCGwMFCQAAAAEFCwkIBwIGFQoJCAsCBBYCAwECHgEC
+            F4AACgkQRkkGen6kkYGLBA//c5rN710kFYdA3J3/bnqffFgPQOmsyzZDpHoprr8l
+            8GmKK6X7XE5oaWL4Y1tEvmF+eWn/sSNIFtjKxrIH1lG+KSSW2iehGYoa/5MX6Tnf
+            vjcpo7A8pnItnqU9NSgeGr0jwF5G1VU0OFukFOd91dMl5y7Tl+LqY9VNRdgExHwO
+            gVci6MqkofFFcHcTGpXAcfQN3hPlhLmQRdXZHO8fWKliN8/gGqMhcThMPG2VOomO
+            jRlIfg+ugIWo+5JiPWEnm9zgyfGD92fCjGzp6bjWZ+nIVrilBjUdOsdBpteFLbfh
+            ozCIloK6mmBCA/1SqGqqZfQY2Ys9jfg1AqI3RCnptTlnFX0555MqfbwrQo/JSLty
+            tzQEAbP0148FXzEboZyH5LamhA8fezYliqgwGopADefwWzJ1yragAFzEig375OHJ
+            D+KNvG4IT6dXKbRIVFAEiUDPfW8ZpkKziBylyS5r8nPI5oMtvg3DOTwefn4A2RoP
+            xNY69iAH5yxKFs8i0J2LlmkvJsoRpYovkapseMM76sa9mpI13G1XNhx5oTAeB5sF
+            paR2w7JChkeGmt5X+e5Rddqe1wb4VVBE6Cq3jAs/3mWfxUJnnR/1+c76MLy3Gg/p
+            bkIpkD4tJVW8ejRhskK0WZcfnj70O0xaQrh4Ua8WzNkSkB5apn5z8/1TEmLeRRF5
+            Nl+5Ag0EYxbmVgEQALFXHcxhnn9omhWiUw05nb7YqfLzDS4pelZ2K5XaDop17eRm
+            +xF48oecsjPyAv3dVhUrj3UHLJ5p0cIwWYMZlIhgWs0vVStT7/bv3kbUieZqcPZ1
+            k9CTZ/1nO0pZ8jqH8FM4Fi10sTjlykBxtmn0eyaLrA81EatDPjbYLylDGuYo+S5X
+            EuPGEUlgRR3Zth0QUsCnThsnQuhsi2DE3IEEXwqwtq4Xv2x03W+JMrBU0E7WJjcy
+            JynmlqgjRMO8HD+3qB5l+nnlaN1vPvfRsKGVw4/bKjcEq/OPB7aspaK+MlitGCIq
+            ekKq/7D2loMdSLqP+vHBJzMToXwdQnh95UHUhMRAtCNMYmpIzY5EM+b4Kr2iDM4L
+            TKhihyfT/SeW6BvNl4/npCfvhaI6Ql+LGkXqkKf4Km7NnXeWdE3J8VJm6lkRr1e4
+            nwv+pgVhvCa/FgNdwpFS2gYBoo/WZWnIWUHCoDXeLbSW/Cs9SShWIS+0vmWg5XXw
+            WqtbVTNGwIsMcmZk8yAgtbo9ChUATPgrJUqVyphckfdsTRmEvvqfMlYPEU6wPBzg
+            QpCW4HkiiUUZzk5YF74+MlTIoncy+1TdRFlL5xYmkTDEk1jFU58j9tutY0vABqNL
+            g57EFw+hEhK97YGD3g/MebCUbSUE5HTsnVYqGwBVqheSEhMYs2pUJJZGNYr/ABEB
+            AAGJAjwEGAEIACYWIQRRe2FS27AEW0jCHDBGSQZ6fqSRgQUCYxbmVgIbDAUJAAAA
+            AQAKCRBGSQZ6fqSRgb0MD/9JBOBkqpsKw4PyR8I0YlhiZinyasuS23xt8/9fsTiS
+            zINDDGQJUMOo4w5QwWggnVVvhVrUJAGNzqohO+R1NSVex0WvBofInAPoR6GiOiGn
+            ESY/nwj3M4EJdJ8t+/Kwp1ljiHCTocOKjNz6oVUsI2BHNJBCoatPulD4hWfwqpU5
+            yp1Y7EXMogAEi/cf7SaayFr2aeO5zaufEdvlrjv6WLsOiyv5tSKGjk9PxH8tDzLg
+            TwlVwAQNU6e6RWI5W2sc+gl5joMbn6Mlw/e1SJjzgLiiedZ7LJUm+a36sPvj49le
+            dKiuKMdIs7QyuE6kOvQ35WiSl1pRbrg3GxQ/jtksLv89T/rqsG4/X7dRu8r16Mk2
+            Z82BrMWQn96I6eXwO9cCXmTEb3NwIF2AOAET7XwRYBGTcXC7SXbuKdEhuhvLRcaE
+            FqKC3N16q9l0sdGdTrY3+yMoiyYfXwPGoiSV8/aemKY72c9QTc9i3F+02hTGp5kE
+            e954O3bSCJVucXpBOe43gXfoWpNpiLuya8ZJE4Ik8AGYyP9ACXX03XEbp5BtBpD9
+            12sPqdC0FV21lqgpX7e3EZ2ki/fDEDfxyoKZ1um9TudzfOucjzPho9TMX9wv1z2H
+            WqIu7Hqt8XP6VyMPUevyVr4emAp/tqMzmJdUR1/lX65mkYniLHYS/ub3b+MPn0M3
+            bg==
+            =pOfA
+            -----END PGP PUBLIC KEY BLOCK-----
+
+          </textarea>
         </div>
+
+      </div>
     </div>
+  </div>
 
-    <div class="modal modal-blur fade" id="modal-contact" tabindex="-1" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Connect with me!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <br />
-                    <h3>Email: contact@solutioncoder.com</h3>
-                    <br />
-                    <h3>Skype: digitalexistence</h3>
-                    <br />
-                    <h3>Telegram: https://t.me/solutioncoder/</h3>
-                    <br />
-                </div>
-
-            </div>
+  <div class="modal modal-blur fade" id="modal-success" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-status bg-success"></div>
+        <div class="modal-body text-center py-4">
+          <!-- Download SVG icon from http://tabler-icons.io/i/circle-check -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-green icon-lg" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M9 12l2 2l4 -4"></path>
+          </svg>
+          <h3>Payment succedeed</h3>
+          <div class="text-muted">Your payment of $290 has been successfully submitted. Your invoice has been
+            sent to support@tabler.io.</div>
         </div>
+        <div class="modal-footer">
+          <div class="w-100">
+            <div class="row">
+              <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
+                  Go to dashboard
+                </a></div>
+              <div class="col"><a href="#" class="btn btn-success w-100" data-bs-dismiss="modal">
+                  View invoice
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="modal modal-blur fade" id="modal-contact" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Connect with me!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <br />
+          <h3>Email: contact@solutioncoder.com</h3>
+          <br />
+          <h3>Skype: digitalexistence</h3>
+          <br />
+          <h3>Telegram: https://t.me/solutioncoder/</h3>
+          <br />
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
