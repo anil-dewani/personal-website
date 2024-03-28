@@ -27,9 +27,29 @@
 
 
     })
+    displayContent();
   })
 </script>
+<script type="text/javascript">
+  function displayContent() {
+    // Define the threshold for mobile devices
+    const mobileWidthThreshold = 768;
 
+    // Get the width of the screen
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Check if the screen width is less than the threshold
+    if (screenWidth < mobileWidthThreshold) {
+      // Display mobile content
+      document.getElementById("mobileContent").style.display = "block";
+      document.getElementById("desktopContent").style.display = "none";
+    } else {
+      // Display desktop content
+      document.getElementById("desktopContent").style.display = "block";
+      document.getElementById("mobileContent").style.display = "none";
+    }
+  }
+</script>
 
 <!-- disabled chatwoot integration 
 <script>
