@@ -17,7 +17,7 @@ Even after a decade, I continue to discover new ideas and possibilities born fro
 The DIY (Do-It-Yourself) nature of this field quickly made it clear that there are effective and ineffective approaches to problem-solving. Merely learning a new programming language from the internet wasn't sufficient. Here are some philosophical insights I've adopted to refine my creative process and enhance its resilience.
 
 ## Technical Debt
-![Technical Debt](https://i.imgur.com/Q8GCvbm.png)
+![Technical Debt](https://i.imgur.com/ZQpPImG.png)
 
 We all must’ve heard about term like financial debt, but what about technical debt? To keep it simple, technical debt is about being conscious of the consequences which can get accumulated when we take shortcuts while developing our code.
 
@@ -27,8 +27,8 @@ Inherently, technical debt is not good or bad. It depends upon how it is leverag
 
 
 ## Estimations Matter
-![Estimations Matter](https://i.imgur.com/il2lQUo.png)
 
+![Estimations Matter](https://i.imgur.com/u3RFWG5.png)
 
 Ever been in a scenario when you estimated to complete a code in one week and it all made complete sense in your mind, but when you actually execute it - it took away your whole month? It’s happened to a lot of us. The typical answer to this issue is to learn to make better estimations.
 
@@ -38,7 +38,8 @@ Personally for me, the core aspect to gaining correct estimates breaks down to: 
 
 
 ## Valuing Simplicity
-![Value of simplicity](https://i.imgur.com/4cYqwOB.png)
+
+![Value of Simplicity](https://i.imgur.com/DDHpBFh.png)
 
 Often times, major bugs, errors and issue happen because of the high entropy nature of the code. The higher the complexity, the higher probability of errors and exploits to surface up.
 
@@ -50,8 +51,8 @@ Keeping things simple is actually not as easy as it seems in this realm, for sur
 
 
 ## Avoiding Assumptions
-![Avoiding Assumptions](https://i.imgur.com/Ec67eIq.png)
 
+![Avoiding Assumptions](https://i.imgur.com/b8bdjEF.png)
 
 A lot of coding is about speculation. Speculating the ways in which a problem can be solved. Speculating about various tools required to develop the infrastructural needs of the software. Speculating about the set of features required by the consumers of the software and many more!
 
@@ -63,8 +64,8 @@ Trick here is to double-check all your assumptions and put them into right persp
 
 
 ## Avoiding Premature Optimizations
-![Avoiding premature optimizations](https://i.imgur.com/0vvJyib.png)
 
+![Avoiding Premature Optimizations](https://i.imgur.com/r4uyd4h.png)
 
 Once you are flowing in that mental flow state of coding for hours while rocking your favourite lo-fi music in the background, it becomes very easy to get caught up into optimisation a certain functionality or feature-set much beyond the actual needs.
 
@@ -74,7 +75,8 @@ The solution is to always have the next steps of task ready in your to-do list o
 
 
 ## Embracing Modularity
-![Embracing Modularity](https://i.imgur.com/njnmkWJ.png)
+
+![Embracing Modularity](https://i.imgur.com/O9LU9vn.png)
 
  It’s been a well-known pattern in the software industry to keep your code modular and structured into smaller inter-connected segments than one big complex script doing multiple things at a time.
 
@@ -86,7 +88,8 @@ Putting these modules into a packaged hierarchy using the object oriented approa
 
 
 ## Maintaining Resilient Integrity
-![Maintaining Resilient Integrity](https://i.imgur.com/2coCJ1t.png)
+
+![Maintaining Resilient Integrity](https://i.imgur.com/0EPtEpz.png)
 
 Developing a highly structured software goes through various software life cycles. If the task is to develop a highly complex software - the major emphasis should be given to follow standard protocols of releasing the software. Usually any new project should be considered pre-alpha and eventually should progress towards alpha, beta, delta and finally release for marketing and production. 
 
@@ -100,9 +103,10 @@ Aim should always be to pre-plan the complete work-flow for development and mana
 
 ## Choosing Tools Wisely
 
-![Choosing Tools Wisely](https://i.imgur.com/LP3rhtx.png)
+![Choosing Tools Wisely](https://i.imgur.com/JUgictY.png)
 
  Since a lot of programmers love to follow the DRY Principle which states that there is really no need to re-invent the wheel and if there is a software package available on the internet for free, it should be utilised.
+
 
 However, this approach comes with few caveats, specially if you are building critical software which has a lot of compliance necessities. 
 
@@ -116,7 +120,8 @@ Since we as coders love to utilise frameworks and cookie-cutters, this should no
 
 
 ## Automating Processes
-![Automation of process](https://i.imgur.com/U4ePmzE.png)
+
+![Automating process](https://i.imgur.com/w50VtJl.png)
 
 Isn’t it the most fascinating thing to just witness your computers do all the hard-work for you while you sip on that chilled coffee? Sure, it is. Thats what computers are for, we can command them a lot of things as long as we learn to command and configure them in the most optimal ways.
 
