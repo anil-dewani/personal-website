@@ -1,63 +1,62 @@
 {{ define "main" }}
 
 <div class="container-xl">
-    <div class="row row-cards">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row g-2 align-items-center">
-                        <div class="col-auto">
-                            <span class="avatar avatar-lg"
-                                style="background-image: url(https://kagi.com/proxy/Front.jpg?c=Z2MjnGhquKWoLNQr8pO8MYozktYKPQtLK1eBD7uPqm8IpLixOtzhHLyHuACQ5G1HtBG1VeeKDdaJPnou91rjcboJVvxNzFd3IjXRCuz2N8k%3D)"></span>
-                        </div>
-                        <div class="col">
-                            <h4 class="card-title m-0">
-                                <a href="#">Canon 7D</a>
-                            </h4>
-                            <div class="text-muted">
-                                85mm f1.8 Lens </br>
-                                50mm f2.8 Lens</br>
-                                15-300mm f4.8 Lens</br>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+  <div class="row row-cards">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="row g-2 align-items-center">
+            <div class="col-auto">
+              <span class="avatar avatar-lg"
+                style="background-image: url(https://kagi.com/proxy/Front.jpg?c=Z2MjnGhquKWoLNQr8pO8MYozktYKPQtLK1eBD7uPqm8IpLixOtzhHLyHuACQ5G1HtBG1VeeKDdaJPnou91rjcboJVvxNzFd3IjXRCuz2N8k%3D)"></span>
             </div>
-        </div>
-        <div class="col-md-6">
+            <div class="col">
+              <h4 class="card-title m-0">
+                <a href="#">Canon 7D</a>
+              </h4>
+              <div class="text-muted">
+                85mm f1.8 Lens </br>
+                50mm f2.8 Lens</br>
+                15-300mm f4.8 Lens</br>
+              </div>
 
-        </div>
-        {{ range $list_index, $list_value := .Site.Params.photography_titles }}
-        <div class="col-sm-6 col-lg-4">
-            <div class="card card-sm">
-                <a href="#" class="d-block"><img src="{{ index $.Site.Params.photography_thumbnails $list_index }}"
-                        class="card-img-top"></a>
-                <div class="card-body">
-                    <div class="d-flex align-items-center">
-                        <span class="avatar me-3 rounded"
-                            style="background-image: url({{ $.Site.Params.coder_photo }})"></span>
-                        <div>
-                            <div>{{ . }}</div>
-                            <div class="text-muted">{{ index $.Site.Params.photography_sub_titles $list_index }}</div>
-                        </div>
-                        <div class="ms-auto">
-                            <a href="#" class="text-muted">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/eye -->
-
-                            </a>
-                            <a href="#" class="ms-3 text-muted">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+          </div>
         </div>
-        {{ end }}
+      </div>
     </div>
+    <div class="col-md-6">
+
+    </div>
+    {{ range $list_index, $list_value := .Site.Params.photography_titles }}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card card-sm">
+        <a href="{{ index $.Site.Params.photography_full_images $list_index }}" target="_blank" class="d-block"><img
+            src="{{ index $.Site.Params.photography_thumbnails $list_index }}" class="card-img-top"></a>
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <span class="avatar me-3 rounded" style="background-image: url({{ $.Site.Params.coder_photo }})"></span>
+            <div>
+              <div>{{ . }}</div>
+              <div class="text-muted">{{ index $.Site.Params.photography_sub_titles $list_index }}</div>
+            </div>
+            <div class="ms-auto">
+              <a href="#" class="text-muted">
+                <!-- Download SVG icon from http://tabler-icons.io/i/eye -->
+
+              </a>
+              <a href="#" class="ms-3 text-muted">
+                <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
 
 </div>
 {{end}}
