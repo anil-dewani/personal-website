@@ -84,7 +84,7 @@ arsenal_list_images = [
 open_source_projects_image = ["/square/ssh-icon.jpg", "/square/backup-file.png"]
 
 open_source_projects_name = [
-  "Firefly Import Helpers",
+  #  "Firefly Import Helpers",
   "Unix Server Backup",
   "JAMStack based personal website",
   "SMS Transaction Parser",
@@ -95,7 +95,7 @@ open_source_projects_name = [
   "System Design Overview",
 ]
 open_source_projects_message = [
-  "An extended transactions importer for the Firefly III Personal Finance manager software. Dedicated modules for top banks of india, to import bank account and credit card transactions.",
+  # "An extended transactions importer for the Firefly III Personal Finance manager software. Dedicated modules for top banks of india, to import bank account and credit card transactions.",
   "An python script focused on doing a detailed daily snapchat of linux servers and automatically uploading them to s3 enabled storage servers.",
   "Personal website coded using the JAMStack Approach using hugo framework, deployed using cloudflare workers on their worldwide CDN for lowest latency and fastest cache.",
   "FastAPI powered API codebase which accepts SMS messages as an input, auto-detects if a particular message is transactional in nature or not, and then parses out all the transactional meta-data and forwards it to Finance Management Systems.",
@@ -106,7 +106,7 @@ open_source_projects_message = [
   "Quick revision notes for conceptual understanding of system design concepts with real-life examples.",
 ]
 open_source_projects_link = [
-  "https://github.com/anil-dewani/firefly-import-helper",
+  #  "https://github.com/anil-dewani/firefly-import-helper",
   "https://github.com/anil-dewani/unix-server-backup",
   "https://github.com/anil-dewani/personal-website",
   "https://github.com/anil-dewani/sms-transaction-parser",
